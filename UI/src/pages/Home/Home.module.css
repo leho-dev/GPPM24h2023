@@ -1,0 +1,77 @@
+.wrapper {
+  background: var(--white-color);
+  width: 100%;
+  height: 90vh;
+}
+
+.body {
+  height: calc(100% - var(--header-height));
+  position: relative;
+}
+
+.headerTitle {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.bookList {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 12px;
+}
+
+.bookItem {
+}
+
+.bookItem:hover {
+  cursor: pointer;
+}
+
+.bookBanner {
+  width: 175px;
+  height: 250px;
+  flex: 1;
+}
+
+.bookBannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bookTitle {
+  text-align: center;
+}
+
+.bodyO {
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  background: #ccc;
+}
+
+.bookDataPage {
+  --item: 3;
+  --gap: 12px;
+  margin-left: calc(var(--gap) * -1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.bookDataImg {
+  margin-left: var(--gap);
+  width: calc(100% / var(--item) - var(--gap));
+  filter: brightness(10%);
+}
+
+.titleImg {
+  text-align: center;
+}
+
+.bookDataPage.show .bookDataImg {
+  filter: brightness(100%);
+}
