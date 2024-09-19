@@ -6,8 +6,24 @@ import { UserContext } from '../../store/UserContext';
 import { google } from '../../assets/img';
 import styles from './Login.module.css';
 
+/**
+ * Login component for user authentication using Google
+ * @returns {JSX.Element} A div containing a button for Google login
+ */
+/**
+ * Handles Google login authentication using Firebase.
+ * @returns {Promise<UserCredential>} A promise that resolves with the user's credentials after successful authentication.
+ */
 function Login() {
   const navigate = useNavigate();
+  ```
+  /**
+   * A React useEffect hook that checks for user authentication and redirects if authenticated
+   * @param {Function} effect - The effect function to be executed
+   * @param {Array} dependencies - An array containing user.uid as a dependency
+   * @returns {void} No return value
+   */
+  ```
   const [user, setUser] = useContext(UserContext);
 
   const handleLoginGoogle = async () => {
